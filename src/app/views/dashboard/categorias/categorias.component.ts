@@ -5,7 +5,6 @@ import { BackendService, Category } from '../../../services/backend.service';
 
 @Component({
   selector: 'app-categorias',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './categorias.component.html',
   styleUrls: ['./categorias.component.scss']

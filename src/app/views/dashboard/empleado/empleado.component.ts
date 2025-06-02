@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-empleado',
-  standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './empleado.component.html',
   styleUrl: './empleado.component.scss'

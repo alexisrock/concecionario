@@ -11,7 +11,6 @@ import { ListempleadosComponent } from './listempleados/listempleados.component'
 
 export const routes: Routes = [
   { path: '',
-
     children: [
       { path: '', component: InitialComponent},
       { path: 'inventario', component: ListinventarioComponent},
@@ -20,10 +19,6 @@ export const routes: Routes = [
       { path: 'ventas', component: VentasComponent},
       { path: 'categorias', component: CategoriasComponent},
       { path: 'empleados', component: ListempleadosComponent},
-
-
-
-
     ]},
 ];
 

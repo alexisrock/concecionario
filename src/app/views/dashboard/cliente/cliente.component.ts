@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cliente',
-  standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './cliente.component.html',
   styleUrl: './cliente.component.scss'

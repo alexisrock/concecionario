@@ -5,7 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inventario',
-  standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './inventario.component.html',
   styleUrl: './inventario.component.scss'

@@ -4,7 +4,6 @@ import { BackendService, SaleRecord } from '../../../services/backend.service';
 
 @Component({
   selector: 'app-ventas',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './ventas.component.html',
   styleUrls: ['./ventas.component.scss']
