@@ -1,0 +1,26 @@
+<div class="container">
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombres:</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+      <div class="invalid-feedback">Name is required.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="position" class="form-label">Cargo:</label>
+      <input type="text" class="form-control" id="position" formControlName="position">
+      <div class="invalid-feedback">Position is required.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="concessionaire" class="form-label">Concesionario:</label>
+      <select class="form-select" id="concessionaire" formControlName="concessionaire">
+        <option value="">Select Concesionario</option>
+        <option *ngFor="let concessionaire of concessionaires" [value]="concessionaire">{{ concessionaire }}</option>
+      </select>
+      <div class="invalid-feedback">Concessionaire is required.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

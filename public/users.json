@@ -1,0 +1,137 @@
+{
+  "users": [
+    {
+      "email": "admin@example.com",
+      "password": "admin123"
+    },
+    {
+      "email": "user@example.com",
+      "password": "user123"
+    }
+  ],
+  "sales": {
+    "parts": [
+      { "name": "Frenos", "quantity": 150 },
+      { "name": "Filtros", "quantity": 200 },
+      { "name": "Baterías", "quantity": 120 },
+      { "name": "Aceite", "quantity": 300 },
+      { "name": "Llantas", "quantity": 180 }
+    ],
+    "sellers": [
+      { "name": "Juan Pérez", "sales": 450000 },
+      { "name": "María García", "sales": 380000 },
+      { "name": "Carlos López", "sales": 520000 },
+      { "name": "Ana Martínez", "sales": 290000 }
+    ],
+    "monthlySales": [
+      { "month": "Enero", "total": 125000 },
+      { "month": "Febrero", "total": 158000 },
+      { "month": "Marzo", "total": 187000 },
+      { "month": "Abril", "total": 198000 },
+      { "month": "Mayo", "total": 214000 },
+      { "month": "Junio", "total": 265000 }
+    ]
+  },
+  "vehicleParts": [
+    {
+      "id": 1,
+      "name": "Frenos de disco",
+      "category": "Frenos",
+      "stock": 45,
+      "price": 120.0,
+      "location": "A-123",
+      "concessionaire": "Concesionario Norte"
+    },
+    {
+      "id": 2,
+      "name": "Filtro de aceite",
+      "category": "Filtros",
+      "stock": 80,
+      "price": 25.0,
+      "location": "B-234",
+      "concessionaire": "Concesionario Sur"
+    },
+    {
+      "id": 3,
+      "name": "Batería 12V",
+      "category": "Baterías",
+      "stock": 30,
+      "price": 150.0,
+      "location": "C-345",
+      "concessionaire": "Concesionario Este"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "123-456-7890"
+    }
+  ],
+  "salesRecords": [
+    {
+      "date": "2024-01-15",
+      "totalSales": 150000,
+      "concessionaire": "Concesionario Norte"
+    },
+    {
+      "date": "2024-02-28",
+      "totalSales": 180000,
+      "concessionaire": "Concesionario Sur"
+    },
+    {
+      "date": "2024-03-31",
+      "totalSales": 220000,
+      "concessionaire": "Concesionario Este"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Frenos",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "Filtros",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Baterías",
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "Aceite",
+      "status": true
+    },
+    {
+      "id": 5,
+      "name": "Llantas",
+      "status": false
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "position": "Vendedor",
+      "concessionaire": "Concesionario Norte"
+    },
+    {
+      "id": 2,
+      "name": "Bob Williams",
+      "position": "Vendedor",
+      "concessionaire": "Concesionario Sur"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "position": "Vendedor",
+      "concessionaire": "Concesionario Este"
+    }
+  ]
+}

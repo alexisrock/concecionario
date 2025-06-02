@@ -1,0 +1,62 @@
+<div class="container-fluid mt-4">
+  <div class="card">
+    <div class="card-header">
+      <h2>Clientes</h2>
+    </div>
+    <div class="card-body">
+
+      <div class="mb-3">
+        <button id="newCustomerButton" type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+            data-bs-target="#clienteModal">
+            <i class="fas fa-plus me-2"></i>Nuevo Cliente
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="clienteModal" tabindex="-1" aria-labelledby="clienteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clienteModalLabel">Nuevo Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <app-cliente ></app-cliente>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Email</th>
+            <th>Celular</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customers">
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.firstName }}</td>
+            <td>{{ customer.lastName }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.phone }}</td>
+            <td> <button class="btn btn-sm btn-outline-primary me-1">
+                <i class="fas fa-edit"></i> Editar
+              </button>
+              <button class="btn btn-sm btn-outline-danger">
+                <i class="fas fa-trash"></i> Desactivar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

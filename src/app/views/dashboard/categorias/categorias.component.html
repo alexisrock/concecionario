@@ -1,0 +1,34 @@
+<div class="container-fluid mt-4">
+  <div class="card">
+    <div class="card-header">
+      <h2>Categorias</h2>
+    </div>
+    <div class="card-body">
+
+      <div class="container">
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Estado</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let category of categories">
+              <td>{{ category.name }}</td>
+              <td>{{ category.status ? 'Activar' : 'Inactivar' }}</td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary me-1">Edit</button>
+                <button class="btn btn-sm btn-outline-danger">
+                  {{ category.status ? 'Deactivar' : 'Activar' }}
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

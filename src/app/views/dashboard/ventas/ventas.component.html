@@ -1,0 +1,33 @@
+<div class="container-fluid mt-4">
+  <div class="card">
+    <div class="card-header">
+      <h2 class="mb-0">Reporte general de ventas</h2>
+    </div>
+    <div class="card-body">
+
+
+
+      <div class="container">
+        <button class="btn btn-outline-secondary mb-3">Descargar Reporte</button>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Concesionario</th>
+              <th>Fecha</th>
+              <th>Total Ventas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let record of salesRecords">
+              <td>{{ record.concessionaire }}</td>
+              <td>{{ record.date }}</td>
+              <td>${{ record.totalSales | number:'1.2-2' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+  </div>
+</div>

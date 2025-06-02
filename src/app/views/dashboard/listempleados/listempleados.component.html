@@ -1,0 +1,61 @@
+<div class="container-fluid mt-4">
+  <div class="card">
+    <div class="card-header">
+      <h2>Empleados</h2>
+    </div>
+    <div class="card-body">
+
+
+      <div class="mb-3">
+        <button id="newCustomerButton" type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+            data-bs-target="#empleadoModal">
+            <i class="fas fa-plus me-2"></i>Nuevo Empleado
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="empleadoModal" tabindex="-1" aria-labelledby="empleadoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="empleadoModalLabel">Nuevo Empleado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <app-empleado></app-empleado>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <div class="container">
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cargo</th>
+              <th>Concesionario</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees">
+              <td>{{ employee.name }}</td>
+              <td>{{ employee.position }}</td>
+              <td>{{ employee.concessionaire }}</td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary me-1">Editar</button>
+                <button class="btn btn-sm btn-outline-danger">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
